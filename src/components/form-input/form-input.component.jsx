@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const FormInput = () => {
-    return (
-        <div>
-            
-        </div>
-    );
-}
+const FormInput = ({ label, ...otherProps }) => {
+  return (
+    <div>
+      <label>{label}</label>
+      <input {...otherProps} />
+    </div>
+  );
+};
 
 export default FormInput;
